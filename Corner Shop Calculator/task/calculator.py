@@ -1,10 +1,23 @@
 # Write your code here
-print("""Prices:
-Bubblegum: $2
-Toffee: $0.2
-Ice cream: $5
-Milk chocolate: $4
-Doughnut: $2.5
-Pancake: $3.2
-""")
+
+def print_earnings():
+    items = {
+        "Bubblegum": 202,
+        "Toffee": 118,
+        "Ice cream": 2250,
+        "Milk chocolate": 1680,
+        "Doughnut": 1075,
+        "Pancake": 80
+    }
+
+    total_earnings = 0
+    print("Earned amount:")
+    for item, amount in items.items():
+        print(f"{item}: ${amount}")
+        total_earnings += amount
+
+    print(f"\nIncome: ${total_earnings:.1f}")
+
+# Call the function
+print_earnings()
 
